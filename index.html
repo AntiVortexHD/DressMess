@@ -10,17 +10,19 @@
 
 <body>
     <audio controls autoplay>
-  <source src="music/glamor.mp3" type="audio/mpeg">
-</audio>[
-</div>
-<div id = "container-time">
-    <div ></div>
-</div>
-<div id "container-score">
-    
-</div>
+        <source src="music/glamor.mp3" type="audio/mpeg">
+    </audio>
+    </div>
+
     <div id="container">
         <div id="items">
+            <div id="container-time">
+                <h1>Time:<span id="timer"></span></h1>
+                
+</div>
+            <div id="container-score">
+                <h1>Score:<span id="score"></span></h1>
+            </div>
             <div id="table">
                 <div class="item-container">
                     <div class="hats item" draggable="true" data-style="hipster" data-type="hat"></div>
@@ -43,21 +45,22 @@
                     <div class="shoes item"></div>
                 </div>
             </div>
-
+<button id="Reset">Reset</button>
         </div>
         <div id="people">
             <div id="person">
-                <div class = "text-bubble">  </div>
-                <div class = "small-bubble-one"> </div> 
-                <div class = "small-bubble-two"> </div>
-                <div class = "small-bubble-three"> </div>
-                <div class= "dropable personclothes" id="person_hat"></div>
-                <div class= "dropable personclothes" id="person_shirt"></div>
-                <div class= "dropable personclothes" id="person_pants"></div>
+                <div class="text-bubble"> </div>
+                <div class="small-bubble-one"> </div>
+                <div class="small-bubble-two"> </div>
+                <div class="small-bubble-three"> </div>
+                <div class="dropable personclothes" id="person_hat"></div>
+                <div class="dropable personclothes" id="person_shirt"></div>
+                <div class="dropable personclothes" id="person_pants"></div>
 
             </div>
         </div>
     </div>
+    
 </body>
 
 </html>

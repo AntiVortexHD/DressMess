@@ -2,8 +2,7 @@ $(document).ready(function() {
     var timeLeft = 60 * 1000
     var itemRows = 4
     var itemCols = 3
-
-
+    var currentItteration= 0
     var currentStyle = null;
     var points = 0;
     var person = null;
@@ -25,14 +24,13 @@ $(document).ready(function() {
             pants: {},
             hat: {},
         };
+        $("#person_hat").css('background-image' , "")
+        $("#person_shirt").css('background-image' , "")
+        $("#person_pants").css('background-image' , "")
     }
 
     function changeItems() {
-        for (var i = 0; i < itemRows; i++) {
-            for (var j = 0; j < itemCols; j++) {
-
-            }
-        }
+       
 
         $(".item").each(function(index, element) {
             var style = styles[Math.floor(Math.random() * styles.length)];
@@ -53,6 +51,10 @@ $(document).ready(function() {
         if (timeLeft <= 0) {
             console.log(points)
             clearInterval(cancleInervalID)
+            $("#timer").html("Time is up!!!")
+        }
+        else {
+            $("#timer").html(timeLeft)
         }
     }
     resetPlayer()
@@ -61,12 +63,18 @@ $(document).ready(function() {
     cancleInervalID = setInterval(function() {
         if (isStyleCorrect()) {
             points++
+            timeLeft += 30 * 1000
             pickNewStyle()
             resetPlayer()
             changeItems()
         }
-    //    updateTimeLeft()
+         $("#score").html(points)
+      updateTimeLeft()
         console.log(points)
+        currentItteration++
+        if (currentItteration % 15==0){
+            changeItems()
+        }
     }, 200)
     window.setplayer = function(style) {
         person.shirt.style = style
@@ -91,6 +99,10 @@ $(document).ready(function() {
         if (event.target.id.substring(7) == itemtype) {
             person[itemtype].style=itemstyle
             $("#person_"+ itemtype).css('background-image' , "url("+itemurl + ')')
+            
         }
+    })
+    $("#Reset").click(function(){
+        location.href = location.href
     })
 })
