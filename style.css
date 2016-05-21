@@ -1,0 +1,117 @@
+#container {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+}
+
+#items {
+  flex: 10;
+}
+
+#people {
+  flex: 20;
+  height: 100%;
+  background: no-repeat center url("images/stagebgedit.png");
+}
+
+#person {
+  width: 250px;
+  height: 600px;
+  margin: 0 auto;
+  background: url("images/adamnew.png") no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+#person_hat {
+  top: 10px;
+  border: 1px solid black;
+  width: 60px;
+  height: 80px;
+  position: absolute;
+  left: 87px;
+}
+
+#person_shirt {
+  border: 1px solid black;
+  width: 165px;
+  height: 160px;
+  position: absolute;
+  left: 37px;
+  top: 120px;
+}
+
+#person_pants {
+  border: 1px solid black;
+  width: 118px;
+  height: 250px;
+  position: absolute;
+  top: 282px;
+  left: 60px;
+}
+
+#table {
+  background-color: white;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+  background-size: contain;
+  border: 5px solid white;
+  height: 75px;
+}
+
+.item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-bubble {
+  border-radius: 35%; 
+  padding: 15px;
+  background: white;
+  height: 100px;
+  width: 150px;
+  border: 1px solid black;
+  position: relative;
+  left: -175px;
+  font-family: Arial Black;
+  
+}
+
+.small-bubble-one{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: white; 
+  position: relative;
+  top: -80px;
+  left: 80px;
+}
+
+.small-bubble-two{
+  border-radius: 60%;
+  width: 10px;
+  height: 10px;
+  background-color: white; 
+  position: relative; 
+  top: -60px;
+  right: -50px;
+}
+
+
+
+
+
+
