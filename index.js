@@ -92,6 +92,5 @@ $(document).ready(function() {
             person[itemtype].style=itemstyle
             $("#person_"+ itemtype).css('background-image' , "url("+itemurl + ')')
         }
-
     })
 })

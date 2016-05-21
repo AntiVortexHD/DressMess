@@ -2,4 +2,8 @@
     background-image: url("images/introbackground.jpg");
     background-size:cover;
     color: white;
+    font-size:2rem;
+}
+a,a:visited{
+    color:#E69132;
 }
