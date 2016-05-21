@@ -30,7 +30,7 @@
 
 #person_hat {
   top: 5px;
-  border: 1px solid black;
+  border: 1px ;
   width: 75px;
   height: 85px;
   position: absolute;
@@ -38,7 +38,7 @@
 }
 
 #person_shirt {
-  border: 1px solid black;
+  border: 1px ;
   width: 180px;
   height: 170px;
   position: absolute;
@@ -47,7 +47,7 @@
 }
 
 #person_pants {
-  border: 1px solid black;
+  border: 1px;
   width: 180px;
   height: 250px;
   position: absolute;
@@ -121,11 +121,9 @@
   top: -70px;
   right: -70px;
 }
-
-
-
 .personclothes {
   background-size: cover;
+  background-position: center;
 }
 #container-time {
   background-color:white;

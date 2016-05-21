@@ -18,8 +18,8 @@
 
          halloween: {
              hat: ["images/halloween/hat.png"],
-             pants: ["images/halloween/hat.png"],
-             shirt: ["images/halloween/pant.png"],
+             pants: ["images/halloween/pant.png"],
+             shirt: ["images/halloween/shirt.png"],
              quote: "I forgot about halloween, make yourself usefull and help me ."
         },
 

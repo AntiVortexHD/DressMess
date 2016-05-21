@@ -13,7 +13,11 @@ $(document).ready(function() {
     }
 
     function pickNewStyle() {
-        currentStyle = styles[Math.floor(Math.random() * styles.length)];
+        var temp = currentStyle
+        while(temp == currentStyle){
+            temp = styles[Math.floor(Math.random() * styles.length)];
+        }
+        currentStyle = temp
         $(".text-bubble").html(data[currentStyle].quote); 
     }
 
@@ -54,7 +58,7 @@ $(document).ready(function() {
             $("#timer").html("Time is up!!!")
         }
         else {
-            $("#timer").html(timeLeft)
+            $("#timer").html(timeLeft/1000)
         }
     }
     resetPlayer()
