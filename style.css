@@ -97,7 +97,7 @@
   background-color: white; 
   position: relative;
   top: -80px;
-  left: 80px;
+  left: 10px;
 }
 
 .small-bubble-two{
@@ -106,8 +106,21 @@
   height: 10px;
   background-color: white; 
   position: relative; 
-  top: -60px;
+  top: -70px;
   right: -50px;
+}
+
+.small-bubble-three{
+  border-radius: 55%; 
+  width: 15px;
+  height: 15px; 
+  background-color: white; 
+  position: relative; 
+  top: -70px;
+  right: -70px;
+}
+.personclothes {
+  background-size: cover;
 }
 
 
